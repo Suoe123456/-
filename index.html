@@ -19,6 +19,7 @@
       </a>
       <nav class="nav" aria-label="主导航">
         <a href="#services">服务</a>
+        <a href="#knowledge">知识库</a>
         <a href="#process">流程</a>
         <a href="#contact">联系</a>
       </nav>
@@ -85,6 +86,42 @@
         </div>
       </section>
 
+      <section id="knowledge" class="section knowledge-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Knowledge Base</p>
+            <h2>法律知识库问答</h2>
+          </div>
+          <p class="section-note">输入问题或关键词，答案将从预设知识库中匹配显示。</p>
+        </div>
+        <div class="knowledge-layout">
+          <form class="kb-search" id="kb-search" role="search">
+            <label for="kb-query">请输入你的问题</label>
+            <div class="kb-input-row">
+              <input
+                id="kb-query"
+                name="query"
+                type="search"
+                placeholder="例如：合同签字前要注意什么？"
+                autocomplete="off"
+              />
+              <button type="submit">查询</button>
+            </div>
+            <div class="kb-suggestions" aria-label="推荐问题">
+              <button type="button" data-query="合同签字前要注意什么">合同签字前要注意什么</button>
+              <button type="button" data-query="劳动合同需要包含哪些内容">劳动合同需要包含哪些内容</button>
+              <button type="button" data-query="公司常见合规风险有哪些">公司常见合规风险有哪些</button>
+            </div>
+          </form>
+          <div class="kb-results" id="kb-results" aria-live="polite">
+            <article class="kb-empty">
+              <h3>可查询的内容</h3>
+              <p>当前知识库包含合同、劳动用工、企业合规、文档审阅和法律知识服务说明。后续可以继续增加条目。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="process" class="section split">
         <div class="section-heading">
           <p class="eyebrow">Process</p>
@@ -133,5 +170,6 @@
       <span>© 2026 北京獬豸咨询科技有限公司</span>
       <span>法律知识服务 · AI辅助咨询</span>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
